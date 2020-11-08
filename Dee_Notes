@@ -1,0 +1,452 @@
+Basic JavaScript
+Npm
+Github
+React = 3 (firstapp, routing, hotelapp)
+////////////////
+
+React_hooks -1
+
+Basic React Native=1
+React-GarphQL 1
+React-JWT(Login Logut)-1
+React-Saga -1
+Depolyment
+-> MERN
+-> Docker
+-> Nginx
+-> heroku
+
+React-Redux =2
+Testing
+
+Mock API
+json-server
+
+--------NOT--------------
+API
+GarphQL
+Login/Logout
+
+React
+>React is a frontend framework that help to build single page application 
+using component based structure
+
+
+------------------------
+
+install vscode, node js and git
+
+npm i prop-types react-redux react-router-dom redux redux-logger redux-promise react-addons-test-utils enzyme-adapter-react-16 react-test-renderer
+
+npm i -g json-server
+
+json-server --watch db.json --port 8900
+
+//////////////
+/******GetAllUser*****/
+(GET)> http://localhost:5000/api/auth/users
+
+/******Register*****/
+(POST)> http://localhost:5000/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","role":"user?"}
+
+
+/******Login*****/
+(POST) => http://localhost:5000/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => http://localhost:5000/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+(response) => {userinfo}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Angular 
+https://material.angular.io/
+
+Frontend Installn’s. ?Node - https://nodejs.org/en/download/?
+Npm - https://www.npmjs.com/?
+Visual Studio Code?- Atom?- Angular IDE?- 
+IntleJ?- Angular-ClI - https://cli.angular.io/??- 
+CSS?- LESS http://lesscss.org/?- 
+SCSS https://sass-lang.com/
+https://angular.io/tutorial
+
+https://angular.io/guide/styleguide
+
+constructor
+oninit
+
+ng content
+ng template
+ng container
+
+UI react 
+>>>>>>>>>>>>>>>>>
+
+NPM 
+> node package manager
+
+
+packages
+generate react app 
+
+>>>>>>>>>>>>>>>>>
+First File in The application
+<<<<<<<<<<
+package.json
+> start File
+> all the packages
+> script (start, test , build )
+> meta data
+
+JSON
+> JavaScript Object Notation
+(way to represent the data, key value pair of data)
+[
+    {
+        "name":"John",
+        "class":"First"
+    },
+    {
+        "name":"Alvin",
+        "class":"First"
+    }
+]
+
+var a  =   {
+        "name":"John",
+        "class":"First"
+    }
+
+///////////
+Step to Generate Package.json()
+///////////////
+
+**NodeJs must be installed in system
+> navigate to the folder using Cmd/Terminal
+> npm init
+> Answer all the questions
+> Type 'yes'
+
+////////////
+Step To Install packages
+//////////
+>  navigate to the folder using Cmd/Terminal
+> npm i packagename / npm install packagename / npm i packagename --save
+
+
+> to install all dependency in one go
+> npm i
+
+/////////
+Step to generate React app
+///////////////
+#Window
+>>>>>>One Time for One system<<<<<<
+
+> open the cmd as admin 
+> npm i -g create-react-app 
+
+>>>>>Next EveryTime You want to generate application<<<<<<<<
+> Go inside folder using simple cmd 
+> create-react-app appname
+
+##############################################
+
+#Mac/Linux
+>>>>>>One Time for One system<<<<<<
+
+> open the terminal
+> sudo npm i -g create-react-app 
+
+>>>>>Next EveryTime You want to generate application<<<<<<<<
+> Go inside folder using simple cmd 
+> create-react-app appname
+
+
+>>>>>>>>>>>
+Folder walkthrough
+function
+let/var/const
+component 
+
+>>>>>>>Step to Start application<<<<<
+> navigate to the folder using cmd/terminal
+> npm start
+> http://localhost:3000
+
+"react": "^16.13.1", > its a main lib
+"react-dom": "^16.13.1",> it help to render content on the screen   JSX
+"react-scripts": "3.4.3" > it help to run the application
+________________
+there are three components are very important
+1. functional component 
+2. class component and 
+3. hooks component
+
+functional component
+> dumb component
+> They are mainly use for display puropse only
+> They cannot maintain the state
+> They are light in weight
+
+class component
+> Logical component
+> they are use to maintain the state and call logic and API
+> They can maintain the state
+> They are heavy as compare to functional
+
+
+component A    =====>        Component B
+state of a      Props        state of b
+
+
+hooks component
+
+state
+> is a local variable
+> any data interaction will happen from state only
+> state value can be updated
+
+props
+> help to transfer the data
+> cannot update the value
+> props can be pass only if component is nested
+> props helps to manage the data from the we got using state
+
+var data = {
+    a:1,
+    b:2
+}
+
+destructing .... data:data
+
+
+data:data
+data
+
+map
+filter
+indexof
+
+//filete help to take ou the value
+//it only return those for which condition is true.
+map is to iterate the data
+var a = [3,6,8,4]
+a.map(data => {return data*2})
+(4) [5, 8, 10, 6]
+
+var city = ['Delhi','Mumbai]
+>>>>>>>>>>>>>>>>>>>
+
+In React there some thing called virtual DOM, 
+if we mention the key .. then it compares the data between two.. instead of updating the whole thing.. he can update that one.
+
+ternary operator:
+if the value before the ? is true then the first part will run otherwise second part is done.
+var a= 10
+a>10?"hi":"bye"
+this.setState({keyword:event.target.value?event.target.value:'User Text Here'})
+
+///////
+parent => child  === use props
+child => parent  === use props with function (callback function)
+
+https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+
+Grid Basic
+Tables
+Buttons
+Panels
+Navbar
+
+Modal
+Carousel
+
+
+/////Setup username & email global/////
+
+GIT: username deeppam
+deeppam@yahoo.com
+
+git config --global user.name "Aakashdeveloper"
+git config --global user.email ahanda205@gmail.com
+
+Carousel setup the username globally in your system
+
+
+////First Time from new folder///
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/mytestrepo.git
+git push -u origin master
+
+////All next Time from  folder///
+git add .
+git commit -m "first commit"
+git push
+
+git pull
+:wq!
+
+/////////
+git checkout -b myfeature
+git add .
+git commit -m "component"
+git push -u origin myfeature
+
+https://github.com/Aakashdeveloper/mytestrepo.git
+
+///////////////////////
+npm i react-router-dom
+
+sessionstorage
+localstorage
+
+
+ThirdHotelapp:
+______________
+http://developerhotel.herokuapp.com
+
+
+(get) hotels> https://developerfunnel.herokuapp.com/hotels
+(get) hotelwrtcity > https://developerfunnel.herokuapp.com/hotels?city=6
+(get) hoteldetails > https://developerfunnel.herokuapp.com/hotelsdetails/1
+(get) onbasisoftrip> https://developerfunnel.herokuapp.com/hotellist/1
+https://developerfunnel.herokuapp.com/hotellist/1?roomtype=1
+https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
+(get) cityname> https://developerfunnel.herokuapp.com/location
+(get)  rooms => https://developerfunnel.herokuapp.com/rooms
+(get)  triptype> https://developerfunnel.herokuapp.com/booking
+(get)  bookingdetails > https://developerfunnel.herokuapp.com/allBooking
+(post) placebooking >  https://developerfunnel.herokuapp.com/placeBook
+
+
+npm i axios react-router-dom react-tabs
+
+data :data
+data
+
+
+withRouter
+
+
+>>>>>>>>>>>>
+login/Logout
+
+Get request we can do from the browser
+get request we can do only in the header not from the body.. so we send the tokens through the header
+n   
+post request we cant do from the browser
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Production
+////////
+ npm run build
+mern  copy build folder to mern folder and no need to copy src filete
+
+ npm i
+ npm start
+
+ keep it in 
+
+https://reactmrngapp.herokuapp.com/
+Heroku github, login, rapo name and connent
+
+MongoDB Atlas --- 
+sql is gone and nosql
+
+isomorphic app - in this both server and the client.... js(a runtime environemnt for server-side applications)
+
+docker:
+to distribute the same memory between different containers and all containers have their own spaces and wont interact with otheres
+
+install the docker - and you can see docker will be running in your system
+then react developer will 
+
+they run in the docker cmd
+
+docker build . -t imagename
+docker run -p 8760:3000 imagename
+
+youtube - developerfunnel
+
+1.GraphQL - buildingGraphql API in 10 minutes
+2. Rest vs Graphql Part 1
+
+hooks
+GraphQL
+
+>>>>>
+
+In isomorphic apps.. it is a  single page server,  we run both backend and frontend in the same server
+In web development, an isomorphic application is one whose code (in this case, JavaScript) can run both in the server and the client. ... js (a runtime environment for server-side applications), React (an isomorphic JavaScript library built by Facebook), and CouchDB (a NoSQL database that has a REST API).
+In Node JS –check  isomorphic apps 
+Front end will run in another app.  3000 port number 
+Api in another port number that is backend 5000 port number 
+>>>>>>>>>>>>
+
+MERN
+The MERN stack wasn’t always the frontrunner in the JavaScript web app game. Many companies and developers still use the MEAN stack, which is identical to the MERN stack except it uses AngularJS or Angular instead of React for the frontend. One of the distinguishing features from React is the virtual DOM manipulation, which helps keep apps dynamic and fast.
+The MERN stack wasn’t always the frontrunner in the JavaScript web app game. Many companies and developers still use the MEAN stack, which is identical to the MERN stack except it uses AngularJS or Angular instead of React for the frontend. One of the distinguishing features from React is the virtual DOM manipulation, which helps keep apps dynamic and fast.
+
+Getting Started
+•	Create a directory on your computer called mern-starter (or whatever you like).
+•	cd into that directory.
+•	Create a backend and a frontend repo on github or using the command line.
+•	Clone both repos into the mern-stack directory.
+•	cd into the backend repo and run npm init -y.
+•	Next, run touch index.js README.md .eslintrc.json .eslintignore .gitignore .env.
+•	Then, run npm i -S express http-errors mongoose superagent body-parser cors dotenv.
+•	Finally, run npm i -D jest eslint.
+With that, we’ve got our basic scaffolding setup for the backend. Go ahead and configure your .eslintrc.json, .eslintignore, .gitignore and .env.
+Your .env file should contain your environment variables:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+docker build . -t imagename
+docker run -p 8760:3000 imagename
+docker is used to container the application by distributing the space between all.
+
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.
+
+go to docker hub
+
+in cmd 
+docker build . -t imagename
+docker run -p 8760 3000 imagename
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

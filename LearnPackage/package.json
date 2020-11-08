@@ -1,0 +1,19 @@
+{
+  "name": "myfirstapp",
+  "version": "1.0.0",
+  "description": "This is my first react app to learn package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Rani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.14.0"
+  }
+}
