@@ -269,30 +269,39 @@ Carousel
 
 
 /////Setup username & email global/////
+in cmd git bash
 
 GIT: username deeppam
 deeppam@yahoo.com
+j@mad
 
 git config --global user.name "Aakashdeveloper"
 git config --global user.email ahanda205@gmail.com
 
 Carousel setup the username globally in your system
 
+after you setup the folder 
 
 ////First Time from new folder///
+echo "# React_Apps" >> README.md
 git init
-git add .
+git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/Aakashdeveloper/mytestrepo.git
+
+git remote add origin https://github.com/deeppam/React_Apps.git
 git push -u origin master
+
+
 
 ////All next Time from  folder///
 git add .
 git commit -m "first commit"
 git push
-
-git pull
-:wq!
+--------
+git pull  ------ in IT we should always pull and then push 
+    ------------ very time when you have a change and want to push your code to git.. first 
+:wq!      ------ means write quit close
+git push
 
 /////////
 git checkout -b myfeature
@@ -300,9 +309,20 @@ git add .
 git commit -m "component"
 git push -u origin myfeature
 
+//////
+git clone url
+copy the path/url and keep that link here
+git add .
+git commit -m "first commit"
+git push
+
+
 https://github.com/Aakashdeveloper/mytestrepo.git
 
+
 ///////////////////////
+application two --- routing app
+
 npm i react-router-dom
 
 sessionstorage
@@ -420,9 +440,32 @@ go to docker hub
 in cmd 
 docker build . -t imagename
 docker run -p 8760 3000 imagename
+>>>>>>>>>>>>>
+
+GraphQL
+npm i
 
 
 
+>>>>>>>>>>..>>>>>>>>>>>
+
+Native app
+
+npm i -g create-react-native-app
+create-react-native-app appname
+>npm run web
+
+npm i -g expo-cli
+expo-client
+
+>download expo app in mobile
+
+>>>>>>>>>>>.
+what is there we cannt achieve in the functional component than in 
+1. state 
+2. we can't call any api calls in functional component.. thats the reason we jump into the class component
+3. we call api and state management separately... we dont need any class component... 
+4. 
 
 
 
